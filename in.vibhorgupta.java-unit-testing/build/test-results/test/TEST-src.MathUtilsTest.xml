@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="src.MathUtilsTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-10T08:14:05" hostname="vibhors-MacBook-Pro.local" time="0.032">
+  <properties/>
+  <testcase name="computeTestArea()" classname="src.MathUtilsTest" time="0.032"/>
+  <system-out><![CDATA[This needs to run before All
+Cleaning up code ....
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

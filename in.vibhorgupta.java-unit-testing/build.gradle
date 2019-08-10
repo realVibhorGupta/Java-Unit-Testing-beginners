@@ -1,0 +1,58 @@
+plugins {
+    id 'java'
+}
+
+group 'java-unit-testing'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+//sourceSets {
+//    otherTest {
+//        java {
+//            srcDir 'src/test/java'
+//            include 'org/foo/test/rest/**'
+//        }
+//        resources {
+//            srcDir 'src/test/java'
+//        }
+//    }
+//    test {
+//        java {
+//            srcDir 'src/test/java'
+//            exclude 'org/foo/rest/test/**'
+//        }
+//        resources {
+//            srcDir 'src/test/java'
+//        }
+//    }
+//}
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.3.1'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.3.1'
+
+//    otherTestCompile sourceSets.main.output
+//    otherTestCompile configurations.testCompile
+//    otherTestCompile sourceSets.test.output
+//    otherTestRuntime configurations.testRuntime + configurations.testCompile
+}
+
+test {
+    useJUnitPlatform()
+}
+//
+//configurations {
+//    testRuntime {
+//        exclude group: 'org.conflicting.library'
+//    }
+//}
+//task otherTest(type: Test) {
+//    testClassesDir = sourceSets.otherTest.output.classesDir
+//    classpath += sourceSets.otherTest.runtimeClasspath
+//}
+//
+//check.dependsOn otherTest
